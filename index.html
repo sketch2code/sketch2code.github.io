@@ -7,19 +7,79 @@
   description: "Automatically generating code from hand-drawn sketches"
   authors:
   - Dana Abou Ali:
-  - Kevin Zakka: kevinzakka.github.io
+  - Kevin Zakka: http://kevinzakka.github.io
   - Abbas Zeitoun:
   affiliations:
-  - American University of Beirut: aub.edu.lb
-  - American University of Beirut: aub.edu.lb
-  - American University of Beirut: aub.edu.lb
+  - American University of Beirut: http://aub.edu.lb
+  - American University of Beirut: http://aub.edu.lb
+  - American University of Beirut: http://aub.edu.lb
 </script>
 
-<dt-article>
+<dt-article class="centered">
   <h1>Sketch To Code</h1>
   <h2>Automatically generating code from hand-drawn sketches</h2>
   <dt-byline></dt-byline>
+<figure class="l-body" style="margin-top:0px; margin-bottom: 0px;">
+<img src="splash.png">
+</figure>
+  <p>
+        Generating code from images, and in particular sketches, has
+        recently emerged as an exciting research area in machine learning
+        and software engineering.
+  </p>
+  <p>
+      We present <b>sketch2code</b>, a framework that automatically
+      generates code from pictures of hand-drawn sketches. In addition to
+      shipping with built-in libraries, <b>sketch2code</b> also supports the addition
+      of user-defined libraries and sketch symbols, which allows it to have a
+      much wider range of applications than that of current systems.
+  </p>
+  <p>
+      We achieve this goal by intelligently parsing the input sketch
+      and then deterministically mapping the detected contents to a target
+      library of the user’s choice.
+  </p>
+  <h2>Results</h2>
+  <p>
+      To demonstrate the capabilities of our framework, we implement two target
+      libraries, one for Qt and one for Alice 3.
+</p>
+<p>
+      In the images below, the left
+      image represents the hand-drawn sketch, and the right image corresponds
+      to the compiled code that <b>sketch2code</b> spits out.
+  </p>
+  <dt-byline></dt-byline>
+  <div class="row">
+  <div class="column">
+      <figure>
+    <img src="qt-sketch.jpg" style="width:80%">
+    </figure>
+  </div>
+  <div class="column">
+    <figure>
+      <img src="qt-result.png" style="width:80%">
+    </figure>
+  </div>
+</div>
+  <dt-byline></dt-byline>
+  <div class="row">
+  <div class="column">
+      <figure>
+    <img src="alice-sketch.jpg" style="width:100%">
+    </figure>
+  </div>
+  <div class="column">
+      <video width="320" height="240" controls>
+          <source src="alice.mp4" type="video/mp4">
+    </video>
+  </div>
+</div>
+
 </dt-article>
 
 <dt-appendix>
+    <h3>Acknowledgments</h3>
+    <p>We're extremely grateful for the feedback of Pr. Fadi Zaraket all throughout this project's development.</p>
+    <p>We would also like to thank NVIDIA for their generous GPU grant which allowed rapid prototyping.<p>
 </dt-appendix>
